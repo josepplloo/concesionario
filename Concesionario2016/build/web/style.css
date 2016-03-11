@@ -1,0 +1,14 @@
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+div.image {
+    content: url(http://aprendeenlinea.udea.edu.co/lms/moodle/file.php/967/logoudea.jpg); 
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 36px;
+    font-size: 18px;
+}

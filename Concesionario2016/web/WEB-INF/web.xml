@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>concesionarioServlet</servlet-name>
+        <servlet-class>co.controller.concesionarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>concesionarioServlet</servlet-name>
+        <url-pattern>/concesionarioServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <resource-ref>
+        <res-ref-name>java:app/jdbc/concesionario</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+         /Applications/NetBeans/glassfish-4.1.1/glassfish/domains/domain1/docroot/imagenes/
+     </param-value>
+    </context-param>
+</web-app>
